@@ -1,0 +1,217 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.login-area {
+    width: 100%;
+    height: 100%;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+#instagram-logo {
+    background-image: url("./assets/img/logos.png");
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    margin: 22px auto 12px;
+    border: 0;
+}
+.login-option {
+    text-align: center;
+}
+.login-inputs  {
+    border: 1px solid lightgray;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.login-inputs input {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 3px;
+}
+.login-inputs input::placeholder {
+    font-size: 12px;
+}
+.login-inputs .inputs {
+    width: 100%;
+    padding: 5px 50px;
+    margin: 5px;
+}
+.login-senha {
+    border: 1px solid lightgray;
+}
+#button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #8bcdfa;
+    padding: 2px 0px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#button:hover {
+    background-color: #0095f6;
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: lightgray;
+}
+.or {
+    color: grey;
+    font-weight: 700;
+}
+
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.face-logo {
+    background-image: url("./assets/img/logos.png");
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+.face-link a {
+    color: #385185;
+    font-size: 15px;
+}
+
+.recuperar-senha {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.recuperar-senha a {
+    color: #385185;
+    font-size: 13px;
+}
+
+.cadastro {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.app {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 30px;
+}
+.app span {
+    font-size: 15px;
+}
+.store {
+    max-width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.app-download {
+    flex: 1;
+    padding: 5px;
+}
+#apple img {
+    width: 150px;
+}
+#android img {
+    width: 150px;
+}
+
+
+/*
+RODAPE
+*/
+footer {
+    width: 100%;
+    height: 100%;
+}
+.rodape {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    max-width: 1150px;
+    padding: 0px;
+}
+.rodape-text {
+    flex: 1;
+    
+}
+.rodape-text ul {
+    display: flex;
+    flex-direction: row;  
+    list-style-type: none;
+    padding:0px;
+    width: 90%;
+}
+.rodape-text li {
+    margin-right: 10px;
+} 
+.rodape-text a {
+    color: #385185;
+}
+.rodape-trademark {
+    color: gray;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 801px), (max-width: 1023px) {
+    .rodape {
+        max-width: 900px;
+        width: 100%;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .rodape-text ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .login-area {
+        margin-bottom: 30px;
+    }
+    .login-img,
+    footer {
+        display: none;
+    }
+}
